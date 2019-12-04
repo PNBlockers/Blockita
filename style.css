@@ -1,0 +1,51 @@
+button{
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    margin-top: 18%;
+    margin-left: 20%;
+    font-size: 50px;
+    text-align: center;
+}
+.picturenisya{
+    margin-top: 15%;
+}
+.cardAboveImage{
+    margin-top:15%;
+}
+
+#cards{
+    margin-top: 10%;
+    margin:5%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+img{
+    height: 285px;
+    width: 270px;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+   
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    margin-right: 14%;
+    margin-left: 14%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
