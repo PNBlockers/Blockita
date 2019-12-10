@@ -10,6 +10,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
+
+  
 </head>
 
 <body>
@@ -47,24 +49,21 @@
             <img class="card-img" src="public/timeclock.jpeg">
             <div class="card-img-overlay">
              
-              <button class="btn btn-primary">0</button>
+              <button id="blockita1" type="number" class="btn btn-primary">0</button>
+              <input id="blockita1" type="number">
             </div>
           </div>
           <h2 class="card-text">-------------------------------</h2>
-          <table class="table table-bordered">
+          <table id="tbBlock1" class="table table-bordered">
             <thead>
               <tr>
-    
                 <th scope="col">Record</th>
                 <th scope="col">Time</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              
+            
+            
             </tbody>
           </table>
           
@@ -79,12 +78,12 @@
           <div id="cardAboveImage" class="card text-white">
             <img class="card-img" src="public/timeclock.jpeg">
             <div class="card-img-overlay">
-              <button class="btn btn-primary">0</button>
+              <button id="blockita2" class="btn btn-primary">0</button>
 
             </div>
           </div>
           <h2 class="card-text">-------------------------------</h2>
-          <table class="table table-bordered">
+          <table id="tbBlock2" class="table table-bordered">
             <thead>
               <tr>
     
@@ -93,10 +92,6 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
               
             </tbody>
           </table>
@@ -104,36 +99,10 @@
       </div>
     </div>
   </div>
-
-  <!-- Full Page Image Header with Vertically Centered Content -->
-  <!-- <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-12 text-center">
-          <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-          <p class="lead">A great starter layout for a landing page</p>
-        </div>
-      </div>
-    </div>
-  </header> -->
-
-  <!-- Page Content -->
-  <!-- <section class="py-5">
-    <div class="container">
-      <h2 class="font-weight-light">Page Content</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-    </div>
-  </section> -->
-
-  <!-- <div class="picturenisya"> -->
-
-  <!-- <div class="card img-fluid" style="width:500px"> -->
-  <!-- <img class="card-img-top" src="public/timeclock.jpeg" alt="Card image" style="width:300px;height: 300px;"> -->
-  <!-- <div class="card-img-overlay"> -->
-  <!-- <button  class="btn btn-primary ">hello</button> -->
-  <!-- </div> -->
-  <!-- </div> -->
-  <!-- </div> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+  <script src="scripts/browserMqtt.js"></script>
+<script src="scripts/controller.js"></script>
+<script src="script.js"></script>
 
 </body>
 
