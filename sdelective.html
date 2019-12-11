@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+    <title>
+    Blockita</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -17,7 +18,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Blockita</a>
+      <img style="height:55px;width:150px;" src="https://lh3.googleusercontent.com/-o7limSho2Mk/Xd4X8zsnSpI/AAAAAAAAFiE/mPExDiAwW8Q4kncUunpN32NJVljx2ZtyACK8BGAsYHg/s0/2019-11-26.png">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,27 +31,33 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">BlockA Occupants</a>
+              <a class="nav-link" href="block1Occupants.html">Block1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">BlockB Occupants</a>
+              <a class="nav-link" href="block2Occupants.html">Block2</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="block3Occupants.html">Block3</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="block4Occupants.html">Block4</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <br><br>
   <div id="cards"></div>
   <div class="row">
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
-          <h3 class="card-title">Card Title</h3>
+          <h3 class="card-title">Block 1</h3>
           <div id="cardAboveImage" class="card text-white">
             <img class="card-img" src="public/timeclock.jpeg">
             <div class="card-img-overlay">
              
               <button id="blockita1" type="number" class="btn btn-primary">0</button>
-              <input id="blockita1" type="number">
             </div>
           </div>
           <h2 class="card-text">-------------------------------</h2>
@@ -74,7 +81,7 @@
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
-          <h3 class="card-title">Card Title</h3>
+          <h3 class="card-title" >Block 2</h3>
           <div id="cardAboveImage" class="card text-white">
             <img class="card-img" src="public/timeclock.jpeg">
             <div class="card-img-overlay">
@@ -98,7 +105,62 @@
         </div>
       </div>
     </div>
+    <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title" >Block 3</h3>
+            <div id="cardAboveImage" class="card text-white">
+              <img class="card-img" src="public/timeclock.jpeg">
+              <div class="card-img-overlay">
+                <button id="blockita3" class="btn btn-primary">0</button>
+  
+              </div>
+            </div>
+            <h2 class="card-text">-------------------------------</h2>
+            <table id="tbBlock3" class="table table-bordered">
+              <thead>
+                <tr>
+      
+                  <th scope="col">Record</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title" >Block 4</h3>
+              <div id="cardAboveImage" class="card text-white">
+                <img class="card-img" src="public/timeclock.jpeg">
+                <div class="card-img-overlay">
+                  <button id="blockita4" class="btn btn-primary">0</button>
+    
+                </div>
+              </div>
+              <h2 class="card-text">-------------------------------</h2>
+              <table id="tbBlock4" class="table table-bordered">
+                <thead>
+                  <tr>
+        
+                    <th scope="col">Record</th>
+                    <th scope="col">Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
   </div>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
   <script src="scripts/browserMqtt.js"></script>
 <script src="scripts/controller.js"></script>
